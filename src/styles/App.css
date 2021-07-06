@@ -1,0 +1,113 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	--primary: #e50914;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+li {
+	list-style-type: none;
+}
+
+body {
+	height: 100vh;
+}
+
+/* MAIN  */
+.App {
+	overflow: scroll;
+	background-color: black;
+	color: white;
+}
+
+/* TOP HEADER NAV  */
+
+.logo {
+	width: 100px;
+	padding: 5px;
+}
+
+.header__nav {
+	margin-left: 1rem;
+}
+
+.header__nav li {
+	display: inline-block;
+	margin-left: 0;
+	padding: 0.5rem;
+	font-size: 1rem;
+	color: white;
+}
+
+/* sections style  */
+.section__style {
+	border-top: 0.5px solid rgba(255, 255, 255, 0.432);
+	padding: 5px;
+}
+
+.list__section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 350px);
+	gap: 20px;
+}
+
+.movie__item img {
+	width: 400px;
+	padding: 20px;
+}
+
+/* section category  */
+
+/* section series  */
+
+/* section movies  */
