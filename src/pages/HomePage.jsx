@@ -1,13 +1,13 @@
 import TrendingNow from '../components/TrendingNow'
 import SeriesTV from '../components/SeriesTV'
-import Animation from '../components/Animation'
+import AnimationPage from './AnimationPage'
 
 function HomePage() {
 	return (
 		<>
 			<TrendingNow />
 			<SeriesTV />
-			<Animation />
+			<AnimationPage />
 		</>
 	)
 }

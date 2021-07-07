@@ -17,7 +17,7 @@ function Header() {
 					</li>
 					<li key={1}>
 						{' '}
-						<Link to="/series">Series</Link>{' '}
+						<Link to="/trending">Trending Now</Link>{' '}
 					</li>
 					<li key={2}>
 						<Link to="/movies">Movies</Link>{' '}

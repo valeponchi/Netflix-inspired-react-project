@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import useStore from '../store'
 import { Link } from 'react-router-dom'
-import MovieListItem from './MovieListItem'
+import MovieListItem from '../components/MovieListItem'
 
 function TrendingNow() {
 	const fetchPopularMovies = useStore(store => store.fetchPopularMovies)
@@ -15,9 +15,7 @@ function TrendingNow() {
 
 	return (
 		<section className="section__style trending-now">
-			<Link to="/trending">
-				<h2>Trending Now</h2>
-			</Link>
+			<h2>Trending Now</h2>
 			<ul className="list__section">
 				{popularMovies.map(movie => (
 					<MovieListItem movie={movie} />

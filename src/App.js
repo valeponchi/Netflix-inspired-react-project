@@ -1,22 +1,23 @@
 import Header from './components/Header'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './styles/App.css'
 import HomePage from './pages/HomePage'
+import TrendingPage from './pages/TrendingPage'
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
-			<HomePage />
 
 			<Switch>
-				<Route path="/">
-					<Redirect path="/movies" />
+				<Route path="/" exact>
+					<HomePage />
+				</Route>
+				<Route path="/trending" exact>
+					<TrendingPage />
 				</Route>
 
-				<Route path="/movies">{/* HomePage  */}</Route>
-
-				<Route path="/series">{/* Series */}</Route>
+				<Route path="/movie/:moviesId">{/* MODAL OF A MOVIE */}</Route>
 
 				<Route>{/* Category */}</Route>
 			</Switch>
