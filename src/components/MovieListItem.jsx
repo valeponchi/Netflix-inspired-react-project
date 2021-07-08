@@ -7,7 +7,6 @@ const placeholder =
 function MovieListItem({ movie }) {
 	const setModal = useStore(store => store.setModal)
 	const setSelectedMovieModal = useStore(store => store.setSelectedMovieModal)
-	const fetchSelectedItem = useStore(store => store.fetchSelectedItem)
 
 	return (
 		<li key={movie.id}>
