@@ -1,9 +1,20 @@
-import { useEffect } from 'react'
-import useStore from '../store'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import useStore from '../store'
 import MovieListItem from './MovieListItem'
 
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from 'swiper/core'
+import 'swiper/swiper.min.css'
+// import 'swiper/components/pagination/pagination.min.css'
+import 'swiper/components/navigation/navigation.min.css'
+// install Swiper modules
+SwiperCore.use([Navigation])
+// import Slider from 'react-slick'
+
 function TrendingNow() {
+	const [swiperRef, setSwiperRef] = useState(null)
 	const fetchPopularMovies = useStore(store => store.fetchPopularMovies)
 	useEffect(() => {
 		fetchPopularMovies()
@@ -18,11 +29,25 @@ function TrendingNow() {
 			<Link to="/trending">
 				<h2>Trending Now</h2>
 			</Link>
-			<ul className="list__section">
-				{popularMovies.map(movie => (
-					<MovieListItem movie={movie} />
-				))}
-			</ul>
+			<Swiper
+				onSwiper={setSwiperRef}
+				slidesPerView={3}
+				centeredSlides={true}
+				spaceBetween={30}
+				pagination={{
+					type: 'fraction',
+				}}
+				navigation={true}
+				className="mySwiper">
+				<ul className="list__section">
+					{/* <Slider /> */}
+					{popularMovies.map(movie => (
+						<SwiperSlide>
+							<MovieListItem movie={movie} key={movie.id} />
+						</SwiperSlide>
+					))}
+				</ul>
+			</Swiper>
 		</section>
 	)
 }

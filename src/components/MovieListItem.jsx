@@ -19,9 +19,9 @@ function MovieListItem({ movie }) {
 					/>
 					<div className="middle">
 						<div className="text">
-							<h4>{`Title: ${movie.title}`}</h4>
-							<h4>{`Vote: ${movie.vote_average}`}</h4>
-							<h4>{`Release Date: ${movie.release_date}`}</h4>
+							<h2 className="movie_title">{`${movie.title}`}</h2>
+							<h3>{`Vote: ${movie.vote_average}`}</h3>
+							<h3>{`Released: ${movie.release_date}`}</h3>
 						</div>
 					</div>
 				</article>
