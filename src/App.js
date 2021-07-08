@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import './styles/App.css'
 import HomePage from './pages/HomePage'
 import TrendingPage from './pages/TrendingPage'
+import ModalConteiner from './modals/ModalConteiner'
 
 function App() {
 	return (
@@ -21,6 +22,8 @@ function App() {
 
 				<Route>{/* Category */}</Route>
 			</Switch>
+
+			<ModalConteiner />
 		</div>
 	)
 }

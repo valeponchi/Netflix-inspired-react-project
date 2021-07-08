@@ -1,10 +1,11 @@
 const baseUrl = 'https://api.themoviedb.org/3'
 const apiKey = 'c0341e4fa2480ab7786c426cfdc94215'
+const selectedLanguage = 'en-US'
 
 const trendingUrl = `${baseUrl}/movie/popular?api_key=${apiKey}&language=en-US&page=1`
 
 //MOVIE ID COMES FROM USE-PARAMS
-const movieDetailsUrl = `${baseUrl}/movie/${movieId}?api_key=${apiKey}&language=en-US`
+const movieDetailsUrl = `${baseUrl}/movie/${movieId}?api_key=${apiKey}&language=${selectedLanguage}`
 
 const API = ''
 

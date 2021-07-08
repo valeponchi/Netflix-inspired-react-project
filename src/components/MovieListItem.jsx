@@ -1,13 +1,23 @@
 import { Link } from 'react-router-dom'
+import useStore from '../store'
 
 const placeholder =
 	'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 function MovieListItem({ movie }) {
+	const setModal = useStore(store => store.setModal)
+	const setSelectedMovieModal = useStore(store => store.setSelectedMovieModal)
+	const fetchSelectedItem = useStore(store => store.fetchSelectedItem)
+
 	return (
 		<li key={movie.id}>
-			<Link to="/movie/:movieId">
-				<article className="movie__item container">
+			<Link>
+				<article
+					className="movie__item container"
+					onClick={() => {
+						setModal('movie')
+						setSelectedMovieModal(movie)
+					}}>
 					<img
 						className="image"
 						src={
@@ -19,9 +29,11 @@ function MovieListItem({ movie }) {
 					/>
 					<div className="middle">
 						<div className="text">
-							<h2 className="movie_title">{`${movie.title}`}</h2>
+							<h2 className="movie_title">{movie.title || movie.name}</h2>
 							<h3>{`Vote: ${movie.vote_average}`}</h3>
-							<h3>{`Released: ${movie.release_date}`}</h3>
+							<h3>{`Released: ${
+								movie.release_date || movie.first_air_date
+							}`}</h3>
 						</div>
 					</div>
 				</article>
