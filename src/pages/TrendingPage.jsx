@@ -4,20 +4,25 @@ import { Link } from 'react-router-dom'
 import MovieListItem from '../components/MovieListItem'
 
 function TrendingNow() {
+	const trendingMoviesAndTV = useStore(store => store.trendingMoviesAndTV)
+	// const popularMovies = useStore(store => store.popularMovies)
 	const fetchPopularMovies = useStore(store => store.fetchPopularMovies)
+
 	useEffect(() => {
 		fetchPopularMovies()
 		console.log('I am fetching now')
 	}, [])
 
-	const popularMovies = useStore(store => store.popularMovies)
-	console.log('popularMovies: ', popularMovies)
+	const all = trendingMoviesAndTV()
+	const allVoteSorted = all.sort(function (a, b) {
+		return b.vote_average - a.vote_average
+	})
 
 	return (
 		<section className="section__style trending-now">
 			<h2>Trending Now</h2>
 			<ul className="list__section">
-				{popularMovies.map(movie => (
+				{allVoteSorted.map(movie => (
 					<MovieListItem movie={movie} />
 				))}
 			</ul>

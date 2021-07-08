@@ -40,6 +40,8 @@ function TrendingNow() {
 	console.log('popularTvSeries: ', popularTvSeries)
 
 	console.log('trendingMoviesAndTV: ', trendingMoviesAndTV())
+	const all = trendingMoviesAndTV()
+	console.log(`all:`, all)
 
 	return (
 		<section className="section__style trending-now">
@@ -48,10 +50,10 @@ function TrendingNow() {
 			</Link>
 			<Swiper
 				onSwiper={setSwiperRef}
-				slidesPerView={4}
+				slidesPerView={2}
+				breakpoints={{ 768: { width: 768, slidersPerView: 4 } }}
 				loop={true}
-				// centeredSlides={true}
-				spaceBetween={30}
+				spaceBetween={20}
 				pagination={{
 					type: 'fraction',
 				}}

@@ -45,6 +45,9 @@ export default styled(ModalContainer)`
 	z-index: 100;
 
 	.modal {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
 		font-weight: 600;
 		border-radius: 5px;
 		padding: 20px 40px;

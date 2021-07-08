@@ -12,7 +12,7 @@ function MovieModal() {
 		<div>
 			<p>{`Title: ${title}`}</p>
 			<br />
-			<p>{`Description: ${selectedModalMovie.overview}`}</p>
+			<p className="modal__description">{`Description: ${selectedModalMovie.overview}`}</p>
 		</div>
 	)
 }

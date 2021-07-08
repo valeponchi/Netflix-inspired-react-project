@@ -48,7 +48,7 @@ html {
 }
 
 h2 {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 h3 {
@@ -75,7 +75,7 @@ a:hover {
 /* MAIN  */
 .App {
 	height: 100vh;
-	overflow: scroll;
+	overflow-y: scroll;
 	background-color: black;
 	color: white;
 }
@@ -101,8 +101,13 @@ a:hover {
 
 /* sections style  */
 .section__style {
-	border-top: 0.5px solid rgba(255, 255, 255, 0.432);
+	/* border-top: 0.5px solid rgba(255, 255, 255, 0.432); */
 	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.section__style h2 {
+	margin: 10px 5px;
 }
 
 .list__section {
@@ -113,9 +118,9 @@ a:hover {
 }
 
 .movie__item img {
-	width: 400px;
+	width: 100%;
 	height: 242px;
-	padding: 20px;
+
 	object-fit: cover;
 }
 
@@ -133,6 +138,7 @@ a:hover {
 }
 
 .middle {
+	width: 70%;
 	transition: 0.5s ease;
 	opacity: 0;
 	position: absolute;
@@ -160,11 +166,15 @@ a:hover {
 }
 
 .movie_title {
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 }
 
 p {
 	color: ;
+}
+
+.modal__description {
+	display: inline-block;
 }
 /* section category  */
 

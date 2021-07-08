@@ -48,10 +48,10 @@ function SeriesTV() {
 			</Link>
 			<Swiper
 				onSwiper={setSwiperRef}
-				slidesPerView={4}
+				breakpoints={{ 768: { width: 768, slidersPerView: 4 } }}
+				slidesPerView={2}
 				loop={true}
-				// centeredSlides={true}
-				spaceBetween={30}
+				spaceBetween={20}
 				pagination={{
 					type: 'fraction',
 				}}
