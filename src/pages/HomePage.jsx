@@ -7,7 +7,7 @@ function HomePage() {
 		<>
 			<TrendingNow />
 			<SeriesTV />
-			<AnimationSection />
+			{/* <AnimationSection /> */}
 		</>
 	)
 }

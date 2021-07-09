@@ -176,6 +176,14 @@ p {
 .modal__description {
 	display: inline-block;
 }
+
+.visible {
+	color: blue;
+}
+
+.invisible {
+	color: chartreuse;
+}
 /* section category  */
 
 /* section series  */

@@ -7,6 +7,7 @@ import MoviesPage from './pages/MoviesPage'
 
 import './styles/App.css'
 import SeriesPage from './pages/SeriesPage'
+import Searched from './components/Searched'
 
 function App() {
 	return (
@@ -27,6 +28,10 @@ function App() {
 
 				<Route path="/series">
 					<SeriesPage />
+				</Route>
+
+				<Route path="/searched">
+					<Searched />
 				</Route>
 
 				<Route>{/* Category */}</Route>

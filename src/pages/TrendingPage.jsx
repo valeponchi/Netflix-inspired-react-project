@@ -1,11 +1,9 @@
 import { useEffect } from 'react'
 import useStore from '../store'
-import { Link } from 'react-router-dom'
 import MovieListItem from '../components/MovieListItem'
 
 function TrendingNow() {
 	const trendingMoviesAndTV = useStore(store => store.trendingMoviesAndTV)
-	// const popularMovies = useStore(store => store.popularMovies)
 	const fetchPopularMovies = useStore(store => store.fetchPopularMovies)
 
 	useEffect(() => {

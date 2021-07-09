@@ -13,6 +13,7 @@ import 'swiper/components/navigation/navigation.min.css'
 SwiperCore.use([Navigation])
 
 function TrendingNow() {
+	const searchedMovies = useStore(store => store.searchedMovies)
 	const [swiperRef, setSwiperRef] = useState('')
 
 	const fetchPopularMovies = useStore(store => store.fetchPopularMovies)
@@ -45,6 +46,10 @@ function TrendingNow() {
 
 	return (
 		<section className="section__style trending-now">
+			{/* <div className={searchedMovies !== [] ? 'visible' : 'invisible'}>
+				<h2>Your search</h2>
+				<p>This is what was found...</p>
+			</div> */}
 			<Link to="/movies">
 				<h2>Movies</h2>
 			</Link>

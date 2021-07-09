@@ -1,9 +1,21 @@
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import useStore from '../store'
 
 function Header() {
-	function handleChange(e) {
-		const inputName = e.target.name
-		const inputValue = inputName.value
+	const fetchSearch = useStore(store => store.fetchSearch)
+
+	let history = useHistory()
+
+	function handleSubmit(e) {
+		e.preventDefault()
+
+		let searchedString = e.target[0].value
+		fetchSearch(searchedString)
+		// <Redirect to="/searched" />
+
+		history.push('/searched')
+
+		e.target.reset()
 	}
 
 	return (
@@ -30,16 +42,11 @@ function Header() {
 					<li key={3}>
 						<Link to="/series">Series</Link>{' '}
 					</li>
-					{/* <span>
+					<li>
 						<form onSubmit={handleSubmit}>
-							<input
-								type="text"
-								name="search"
-								value={input.search}
-								onChange={handleChange}
-								placeholder="Search..."></input>
+							<input type="text" name="search" placeholder="Search..."></input>
 						</form>
-					</span> */}
+					</li>
 				</ul>
 			</nav>
 		</header>
