@@ -1,9 +1,11 @@
 import Header from './components/Header'
 import { Route, Switch } from 'react-router-dom'
-import './styles/App.css'
 import HomePage from './pages/HomePage'
 import TrendingPage from './pages/TrendingPage'
 import ModalConteiner from './modals/ModalConteiner'
+import MoviesPage from './pages/MoviesPage'
+
+import './styles/App.css'
 
 function App() {
 	return (
@@ -18,7 +20,9 @@ function App() {
 					<TrendingPage />
 				</Route>
 
-				<Route path="/movie/:moviesId">{/* MODAL OF A MOVIE */}</Route>
+				<Route path="/movies">
+					<MoviesPage />
+				</Route>
 
 				<Route>{/* Category */}</Route>
 			</Switch>

@@ -1,4 +1,4 @@
-function AnimationPage() {
+function AnimationSection() {
 	return (
 		<section className="section__style animation">
 			<h2>Animation</h2>
@@ -32,4 +32,4 @@ function AnimationPage() {
 	)
 }
 
-export default AnimationPage
+export default AnimationSection

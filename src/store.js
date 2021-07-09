@@ -52,6 +52,20 @@ const useStore = create((set, get) => ({
 				set({ selectedItem: itemDetails })
 			})
 	},
+
+	// search: '',
+	// setSearch: input => set({ search: input }),
+
+	// searchedMovies: [],
+	// fetchSearch: item => {
+	// 	fetch(
+	// 		`https://api.themoviedb.org/3/search/multi?api_key=c0341e4fa2480ab7786c426cfdc94215&language=en-US&query=${search}&page=1&include_adult=false`
+	// 	)
+	// 		.then(resp => resp.json())
+	// 		.then(searchedItems => {
+	// 			set({ searchedMovies: searchedItems })
+	// 		})
+	// },
 }))
 
 export default useStore
