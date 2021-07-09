@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom'
 import useStore from '../store'
 
 const placeholder =
-	'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+	'https://images.pexels.com/photos/3921045/pexels-photo-3921045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+// 'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+// 'https://images.pexels.com/photos/390089/film-movie-motion-picture-390089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 
 function MovieListItem({ movie }) {
 	const setModal = useStore(store => store.setModal)
