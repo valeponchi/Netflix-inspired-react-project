@@ -6,6 +6,7 @@ import ModalConteiner from './modals/ModalConteiner'
 import MoviesPage from './pages/MoviesPage'
 
 import './styles/App.css'
+import SeriesPage from './pages/SeriesPage'
 
 function App() {
 	return (
@@ -22,6 +23,10 @@ function App() {
 
 				<Route path="/movies">
 					<MoviesPage />
+				</Route>
+
+				<Route path="/series">
+					<SeriesPage />
 				</Route>
 
 				<Route>{/* Category */}</Route>

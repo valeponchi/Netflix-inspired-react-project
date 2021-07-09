@@ -45,7 +45,7 @@ function TrendingNow() {
 
 	return (
 		<section className="section__style trending-now">
-			<Link to="/trending">
+			<Link to="/movies">
 				<h2>Movies</h2>
 			</Link>
 			<Swiper

@@ -8,7 +8,7 @@ function MoviesPage() {
 
 	useEffect(() => {
 		fetchPopularMovies()
-		console.log('I am fetching now')
+		console.log('I am fetching movies now (page)')
 	}, [])
 
 	const moviesVoteSorted = popularMovies.sort(function (a, b) {

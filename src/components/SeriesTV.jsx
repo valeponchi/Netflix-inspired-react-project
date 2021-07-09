@@ -43,7 +43,7 @@ function SeriesTV() {
 
 	return (
 		<section className="section__style trending-now">
-			<Link to="/trending">
+			<Link to="/series">
 				<h2>TV series</h2>
 			</Link>
 			<Swiper
