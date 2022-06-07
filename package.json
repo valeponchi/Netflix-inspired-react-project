@@ -18,8 +18,8 @@
     "zustand": "^3.5.5"
   },
   "engines": {
-    "node": "^16.1.0",
-    "npm": "^3.0.0"
+    "node": "^16.x",
+    "npm": "^6.x"
   },
   "scripts": {
     "start": "react-scripts start",
