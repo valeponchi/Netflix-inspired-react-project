@@ -1,3 +1,8 @@
+Educational project - done to learn more about React with hooks.
+Netflix inspired (clone).
+
+![My Image](Netflix-inspired-app-homepage.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
