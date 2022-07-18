@@ -4,6 +4,11 @@ done to learn more about React with hooks.
 
 Using Zustand as React state management: [https://zustand-demo.pmnd.rs/](https://zustand-demo.pmnd.rs/).
 
+Tool used to create the slides: [SwiperJS - url link](https://swiperjs.com/demos)
+
+API used: [TheMovieDB - link](https://api.themoviedb.org)
+
+
 Netflix inspired (clone).
 
 ## __Homepage:__
