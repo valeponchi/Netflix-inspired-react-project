@@ -1,6 +1,6 @@
 ## __Educational project__ 
 
-done to learn more about React with hooks.
+Done to learn more about React with hooks, HTML/CSS (grid), Javascript.
 
 Using Zustand as React state management: [https://zustand-demo.pmnd.rs/](https://zustand-demo.pmnd.rs/).
 
