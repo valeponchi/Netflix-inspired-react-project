@@ -2,7 +2,7 @@ Educational project - done to learn more about React with hooks.
 Using Zustand as React state management: [https://zustand-demo.pmnd.rs/](https://zustand-demo.pmnd.rs/).
 Netflix inspired (clone).
 
-![My Image](Netflix-inspired-app-homepage.png)
+![My Image](Netflix-inspired-app-homepage.jpg)
 
 # Getting Started with Create React App
 
