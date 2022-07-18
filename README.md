@@ -1,6 +1,11 @@
-Educational project - done to learn more about React with hooks.
+## __Educational project__ 
+
+done to learn more about React with hooks.
+
 Using Zustand as React state management: [https://zustand-demo.pmnd.rs/](https://zustand-demo.pmnd.rs/).
 Netflix inspired (clone).
+
+## __Homepage:__
 
 ![My Image](Netflix-inspired-app-homepage.jpg)
 
